@@ -27,6 +27,6 @@ export abstract class LoggerService {
 
   protected isProperLogLevel(logLevel: LogLevel): boolean {
     if (this.logLevel === LogLevel.DEBUG) return true;
-    return this.logLevel >= this.logLevel;
+    return logLevel >= this.logLevel;
   }
 }
